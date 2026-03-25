@@ -37,29 +37,29 @@
 }
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 231 50% 15%;
+  --background: 231 60% 14%;
+  --foreground: 231 80% 95%;
   
-  --primary: 231 70% 50%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 231 80% 65%;
+  --primary-foreground: 231 60% 10%;
   
-  --secondary: 231 60% 93%;
-  --secondary-foreground: 231 60% 25%;
+  --secondary: 231 50% 22%;
+  --secondary-foreground: 231 70% 90%;
   
-  --muted: 231 40% 95%;
-  --muted-foreground: 231 30% 40%;
+  --muted: 231 45% 20%;
+  --muted-foreground: 231 40% 70%;
   
-  --accent: 25 90% 55%;
-  --accent-foreground: 0 0% 100%;
+  --accent: 25 90% 60%;
+  --accent-foreground: 25 60% 10%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
   
-  --border: 231 40% 88%;
-  --ring: 231 70% 50%;
+  --border: 231 40% 28%;
+  --ring: 231 80% 65%;
   
-  --card: 0 0% 100%;
-  --card-foreground: 231 50% 15%;
+  --card: 231 55% 18%;
+  --card-foreground: 231 80% 95%;
 }
 
 .dark {

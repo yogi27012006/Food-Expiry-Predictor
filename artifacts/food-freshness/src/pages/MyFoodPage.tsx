@@ -144,7 +144,7 @@ export default function MyFoodPage() {
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted-foreground line-clamp-3 mb-4 flex-1">
+                    <p className="text-sm text-white line-clamp-3 mb-4 flex-1">
                       {item.aiAnalysis}
                     </p>
 

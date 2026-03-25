@@ -237,7 +237,7 @@ export default function AnalyzePage() {
                     <Sparkles className="w-4 h-4 text-primary" />
                     AI Analysis
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-white leading-relaxed text-sm">
                     {result.aiAnalysis}
                   </p>
                 </div>

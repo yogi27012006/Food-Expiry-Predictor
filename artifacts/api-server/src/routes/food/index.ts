@@ -4,11 +4,8 @@ import { openai } from "@workspace/integrations-openai-ai-server";
 import { db, foodItemsTable } from "@workspace/db";
 import { eq } from "drizzle-orm";
 import {
-  ListFoodItemsResponse,
-  ListFoodItemsResponseItem,
   DeleteFoodItemParams,
 } from "@workspace/api-zod";
-import { logger } from "../../lib/logger";
 
 const router: IRouter = Router();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 * 1024 * 1024 } });
@@ -103,12 +100,11 @@ Return ONLY the JSON object, no additional text.`;
 
   req.log.info({ id: inserted.id, foodName: inserted.foodName }, "Food item analyzed and saved");
 
-  res.status(201).json(
-    ListFoodItemsResponseItem.parse({
-      ...inserted,
-      createdAt: inserted.createdAt.toISOString(),
-    })
-  );
+  res.status(201).json({
+    ...inserted,
+    predictedExpiryDate: inserted.predictedExpiryDate,
+    createdAt: inserted.createdAt.toISOString(),
+  });
 });
 
 router.get("/food/items", async (req, res): Promise<void> => {
@@ -117,14 +113,12 @@ router.get("/food/items", async (req, res): Promise<void> => {
     .from(foodItemsTable)
     .orderBy(foodItemsTable.predictedExpiryDate);
 
-  const parsed = ListFoodItemsResponse.parse(
+  res.json(
     items.map((item) => ({
       ...item,
       createdAt: item.createdAt.toISOString(),
     }))
   );
-
-  res.json(parsed);
 });
 
 router.delete("/food/items/:id", async (req, res): Promise<void> => {

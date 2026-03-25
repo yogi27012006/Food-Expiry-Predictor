@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Food Freshness Analyzer"
+version = "1.0.0"
+id = "artifacts/food-freshness"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21374
+
+[services.development]
+run = "pnpm --filter @workspace/food-freshness run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/food-freshness", "run", "build" ]
+publicDir = "artifacts/food-freshness/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21374"
+BASE_PATH = "/"

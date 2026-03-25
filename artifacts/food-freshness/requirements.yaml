@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "For premium, smooth page transitions and micro-interactions"
+  "react-dropzone": "For a robust, beautiful drag-and-drop file upload experience"
+  "date-fns": "For formatting human-readable dates for expiry"
+  "clsx": "For conditional class merging"
+  "tailwind-merge": "For merging Tailwind classes without conflicts"
+
+images:
+  - path: "artifacts/food-freshness/public/images/fresh-bg.png"
+    description: "Very light, subtle abstract background pattern with soft organic green and white shapes, representing freshness, nature, and health. Minimalist and high-key."
+    aspect_ratio: "16:9"
+
+notes:
+  - "The app uses @workspace/api-client-react for TanStack Query hooks generated from the OpenAPI spec."
+  - "Browser notifications require user permission, which is requested on app load."

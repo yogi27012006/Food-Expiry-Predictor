@@ -1,10 +1,12 @@
-# Workspace
+# Food Freshness Analyzer
 
 ## Overview
 
+A food freshness analyzer app. Users upload food photos and AI analyzes color, texture, and surface conditions to predict expiry dates. Browser notifications alert users the day before food expires.
+
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
-## Stack
+## Tech Stack
 
 - **Monorepo tool**: pnpm workspaces
 - **Node.js version**: 24

@@ -37,59 +37,55 @@
 }
 
 :root {
-  /* Clean, fresh, minty light theme */
-  --background: 150 20% 99%;
-  --foreground: 150 30% 15%;
+  --background: 220 20% 98%;
+  --foreground: 222 40% 12%;
   
-  /* Vibrant healthy green */
-  --primary: 142 71% 40%;
+  --primary: 231 70% 50%;
   --primary-foreground: 0 0% 100%;
   
-  /* Soft sage */
-  --secondary: 142 30% 90%;
-  --secondary-foreground: 142 40% 20%;
+  --secondary: 231 40% 92%;
+  --secondary-foreground: 231 50% 25%;
   
-  --muted: 150 15% 94%;
-  --muted-foreground: 150 15% 45%;
+  --muted: 220 15% 93%;
+  --muted-foreground: 220 15% 45%;
   
-  /* Warm citrus accent */
-  --accent: 85 70% 50%;
+  --accent: 25 90% 55%;
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
   
-  --border: 150 20% 88%;
-  --ring: 142 71% 40%;
+  --border: 220 20% 88%;
+  --ring: 231 70% 50%;
   
   --card: 0 0% 100%;
-  --card-foreground: 150 30% 15%;
+  --card-foreground: 222 40% 12%;
 }
 
 .dark {
-  --background: 150 25% 6%;
-  --foreground: 150 10% 95%;
+  --background: 222 30% 8%;
+  --foreground: 220 15% 95%;
   
-  --primary: 142 60% 45%;
-  --primary-foreground: 150 30% 10%;
+  --primary: 231 65% 58%;
+  --primary-foreground: 0 0% 100%;
   
-  --secondary: 150 20% 15%;
-  --secondary-foreground: 150 10% 90%;
+  --secondary: 222 25% 16%;
+  --secondary-foreground: 220 15% 90%;
   
-  --muted: 150 15% 15%;
-  --muted-foreground: 150 15% 65%;
+  --muted: 222 20% 16%;
+  --muted-foreground: 220 15% 60%;
   
-  --accent: 85 60% 45%;
-  --accent-foreground: 150 30% 10%;
+  --accent: 25 85% 55%;
+  --accent-foreground: 0 0% 100%;
   
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
   
-  --border: 150 20% 18%;
-  --ring: 142 60% 45%;
+  --border: 222 25% 20%;
+  --ring: 231 65% 58%;
   
-  --card: 150 20% 9%;
-  --card-foreground: 150 10% 95%;
+  --card: 222 25% 11%;
+  --card-foreground: 220 15% 95%;
 }
 
 @layer base {
